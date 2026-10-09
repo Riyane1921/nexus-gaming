@@ -1,0 +1,109 @@
+/* تنسيق عام للصفحة وإضافة تدرج لوني للخلفية */
+body {
+    background-color: #0b0c10;
+    color: #c5c6c7;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: radial-gradient(circle at center, #1f2833 0%, #0b0c10 100%);
+}
+
+/* بطاقة الاستمارة المركزية */
+.gaming-card {
+    background-color: #151a21;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(0, 209, 178, 0.15);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #1f2833;
+}
+
+/* المنطقة العلوية الخاصة بالشعار والعنوان */
+.logo-area {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-icon {
+    font-size: 45px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.logo-area h2 {
+    color: #66fcf1;
+    /* لون أزرق مضيء (Cyan) يعطي طابع ألعاب */
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+.logo-area p {
+    font-size: 13px;
+    color: #858688;
+    line-height: 1.5;
+}
+
+/* تنسيق المجموعات لترتيب النص فوق الحقول */
+.input-group {
+    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* تنسيق العناوين الصغيرة فوق المربعات */
+.input-group label {
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #66fcf1;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* تنسيق حقول الإدخال النصية والقائمة المنسدلة */
+input[type="email"],
+input[type="text"],
+select {
+    background-color: #0b0c10;
+    border: 1px solid rgba(102, 252, 241, 0.2);
+    border-radius: 8px;
+    color: white;
+    padding: 14px;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* تأثير التوهج الأزرق عند الضغط على الحقل للكتابة */
+input:focus,
+select:focus {
+    border-color: #66fcf1;
+    box-shadow: 0 0 10px rgba(102, 252, 241, 0.3);
+}
+
+/* تنسيق زر الإرسال */
+.submit-btn {
+    background-color: #45a29e;
+    color: #0b0c10;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* تأثير حركة وتوهج إضافي عند تمرير الماوس فوق الزر */
+.submit-btn:hover {
+    background-color: #66fcf1;
+    box-shadow: 0 0 15px rgba(102, 252, 241, 0.4);
+    transform: translateY(-2px);
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Gaming Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="gaming-card">
+        <div class="logo-area">
+            <span class="logo-icon">🎮</span>
+            <h2>NEXUS GAMING</h2>
+            <p>Register your interest to claim free rewards</p>
+        </div>
+
+        <!-- يجب إنشاء حساب جديد واستخدام معرف جديد بعد تعديل الحقول -->
+        <form action="https://formbold.com/s/oPj2M" method="POST">
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="game-name">Game Name</label>
+                <input type="text" id="ingame-name" name="ingame_name" placeholder="Game Name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="platform">Preferred Platform</label>
+                <select id="platform" name="platform" required>
+                    <option value="" disabled selected>Select your platform</option>
+                    <option value="pc">PC / Steam</option>
+                    <option value="playstation">PlayStation</option>
+                    <option value="xbox">Xbox</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Join Community 🚀</button>
+        </form>
+    </div>
+
+
+    <script>
+        // You can change 'MySecret2026' to any password you want
+        var password = prompt("Please enter the verification code to access this page:");
+        if (password !== "riyane1921") {
+            alert("Invalid code! Access denied.");
+            window.location.href = "https://google.com"; // Redirects them away if wrong
+        }
+    </script>
+</body>
+
+</html>
